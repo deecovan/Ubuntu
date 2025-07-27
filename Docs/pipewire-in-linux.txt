@@ -1,0 +1,20 @@
+PipeWire is a multimedia server and framework for Linux, designed to handle audio and video streams with low latency and advanced routing capabilities. It aims to replace both PulseAudio and JACK, providing a unified solution for various multimedia use cases, from desktop audio to professional audio production.
+Developing with PipeWire in C:
+PipeWire provides a C API for interacting with its services and building applications. This API allows developers to:
+Connect to the PipeWire Daemon:
+Establish a connection to the PipeWire server to manage multimedia streams.
+Create and Manage Streams:
+Define and control audio and video streams for playback, capture, or processing.
+Handle Buffers:
+Access and manipulate audio and video data buffers for processing and routing within the PipeWire graph.
+Manage Nodes and Ports:
+Interact with the graph-based architecture of PipeWire, which consists of interconnected nodes and ports representing multimedia processing units and their inputs/outputs.
+Utilize Main Loops:
+Integrate PipeWire's event loop into your application to handle asynchronous events and manage stream processing.
+Key Concepts for C Development:
+pw_stream: Represents an audio or video stream within PipeWire.
+pw_main_loop: Manages the event loop for your PipeWire application.
+pw_buffer: Represents a buffer containing multimedia data.
+pw_node and pw_port: Building blocks of the PipeWire processing graph.
+Examples and Resources:
+The official PipeWire documentation includes C examples demonstrating how to create audio sources, sinks, and process multimedia data. These examples provide a starting point for developing PipeWire-enabled applications in C.
