@@ -3,6 +3,8 @@
 ## 25.07.29 Continue the Book page 31 1.7 Functions
 - Install VS Code
 - Arrange folders
+- Continue Functions
+  - Finished 1.9 Char Arrays
 
 ## 25.07.29 Continue the Book page 29 Arrays
 - Modify cat2pipe:
