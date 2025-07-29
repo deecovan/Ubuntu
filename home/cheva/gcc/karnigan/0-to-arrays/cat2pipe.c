@@ -1,6 +1,6 @@
 #include <stdio.h>
 /* Use $ cat cat2text.txt | ./cat2pipe.out */
-/* v2 Word length and Char frequencies gistograms */
+/* v2 Word length and Character frequency histograms */
 
 #define CSPACE ' '
 #define CTAB '\t'
@@ -10,9 +10,8 @@
 #define FINALCHAR '\b'
 #define FIRSTLETTER 'A'
 
-int c, i, j, k, charid;
-int longspaces, inword, words;
-long cnt, ss, tt, cc, cn, cw, cwi;
+long cnt, cc, nn, ss, tt, cw, cwi;
+int c, i, j, k, charid, longspaces, inword, words;
 int nwords[MAXCVI], nchars[MAXFRQ];
 char str[2];
 
@@ -39,7 +38,8 @@ void main() {
     }
 
     else if(c == CNEW){
-      ++cn;
+      ++nn;
+      // printf("%ld", nn);
       putchar(c);
       longspaces = 0;
       inword = 0;
@@ -72,7 +72,7 @@ void main() {
   printf("\n\n");
   printf("Input symbols: %ld, Output Chars: %ld, Spaces: %ld, Tabs: %ld", cnt, cc, ss, tt);
   printf("\n");
-  printf("Words: %ld, Lines: %ld", cw, cn);
+  printf("Words: %ld, Lines: %ld", cw, nn);
   printf("\n");
 
   printf("\nWord lengths from 1 to %d:", MAXCVI + 1);
@@ -85,7 +85,7 @@ void main() {
   }
   printf(" %2d+[%2d]\n", MAXCVI, nwords[MAXCVI]);
 
-  printf("\nA-z Frequecies from A(0) to ?(%d):\n", MAXFRQ - 1);
+  printf("\nA-z Frequencies from A(0) to ?(%d):\n", MAXFRQ - 1);
   for(i = 0; i < (MAXFRQ / 8); ++i){
     for(j = 0; j < (MAXFRQ / (MAXFRQ / 8)); ++j){
       k = i * 8 + j;
