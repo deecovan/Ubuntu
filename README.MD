@@ -1,5 +1,7 @@
 # Ubuntu GitHub repo 
 
+## 25.07.30 Continue tasks 1.16-1.19 page 37 1.9 Char Arrays
+
 ## 25.07.29 Continue the Book page 31 1.7 Functions
 - Install VS Code
 - Arrange folders
