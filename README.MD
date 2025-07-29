@@ -1,5 +1,12 @@
 # Ubuntu GitHub repo 
 
+## 25.07.29 Continue the Book page 31 1.7 Functions
+
+## 25.07.29 Continue the Book page 29 Arrays
+- Modify cat2pipe:
+	- Word length gistogram
+	- Symbol frequency gistogram
+
 ## 25.07.29 Continue the Book page 27
 - cat2pipe and cat2text
   - Usage:
