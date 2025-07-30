@@ -1,6 +1,7 @@
 # Ubuntu GitHub repo 
 
-## 25.07.30 Continue tasks 1.16-1.19 page 37 1.9 Char Arrays
+## 25.07.30 Continue 1.10 Scope page 37
+- 1-10-scope 1-10-0-getline-copy-se.c
 
 ## 25.07.29 Continue the Book page 31 1.7 Functions
 - Install VS Code
